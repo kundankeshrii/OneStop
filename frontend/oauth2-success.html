@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Signing you in...</title>
+
+</head>
+
+<body>
+
+<script>
+
+    const params =
+        new URLSearchParams(
+            window.location.search
+        );
+
+    const token =
+        params.get("token");
+
+    if (token) {
+
+        localStorage.setItem(
+            "onestop_token",
+            token
+        );
+
+        window.location.href =
+            "index.html";
+
+    } else {
+
+        document.body.innerHTML =
+            "<p>Unable to complete Google sign in.</p>";
+
+    }
+
+</script>
+
+</body>
+
+</html>

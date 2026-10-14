@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OneStop - Placement Preparation</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-top">
+
+            <div class="logo">
+                <span class="logo-mark">O</span>
+                <span class="logo-text">OneStop</span>
+            </div>
+
+            <button class="new-chat-btn" id="newChatBtn">
+                <span>+ </span>
+                <span>Explore</span>
+            </button>
+
+            <!-- Features -->
+            <div class="sidebar-section">
+
+                <p class="sidebar-label">FEATURES</p>
+
+                <button class="feature-item" data-feature="placement">
+                    <span class="feature-icon">▣</span>
+                    <span>Placement</span>
+                </button>
+
+                <button class="feature-item" data-feature="scholarship">
+                    <span class="feature-icon">◇</span>
+                    <span>Scholarship</span>
+                </button>
+
+                <button class="feature-item" data-feature="college">
+                    <span class="feature-icon">⌂</span>
+                    <span>College Prediction</span>
+                </button>
+
+                <button class="feature-item" data-feature="history">
+                    <span class="feature-icon">↺</span>
+                    <span>History</span>
+                </button>
+
+            </div>
+
+
+
+        </div>
+
+
+        <!-- ================= USER ACCOUNT ================= -->
+
+        <div class="sidebar-bottom">
+
+            <button class="user-account" id="userAccount">
+
+                <div class="user-avatar">
+                    U
+                </div>
+
+                <div class="user-info">
+                    <span class="user-name">Guest User</span>
+                    <span class="user-status">Continue as guest</span>
+                </div>
+
+                <span class="account-menu">•••</span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+    <!-- ================= ONESTOP LANDING PAGE ================= -->
+
+    <section class="onestop-home" id="onestopHome">
+
+        <div class="onestop-home-content">
+
+            <h1 class="onestop-brand-title">
+                OneStop
+            </h1>
+
+            <p class="onestop-home-subtitle">
+                Your Personalized Carrer And Education Advisor
+            </p>
+
+            <p class="onestop-home-question">
+                 
+            </p>
+
+
+            <div class="onestop-services">
+
+                <!-- Career Guidance -->
+
+                <!-- <button type="button" class="onestop-service-card" data-service="career">
+
+                    <span class="onestop-service-icon">✦</span>
+
+                    <span class="onestop-service-text">
+
+                        <strong>
+                            Career Guidance
+                        </strong>
+
+                        <small>
+                            Explore your career path
+                        </small>
+
+                    </span>
+
+                </button> -->
+
+
+                <!-- College Predictor -->
+
+                <button type="button" class="onestop-service-card" data-service="college">
+
+                    <span class="onestop-service-icon">⌂</span>
+
+                    <span class="onestop-service-text">
+
+                        <strong>
+                            College Predictor
+                        </strong>
+
+                        <small>
+                            Find colleges that fit you
+                        </small>
+
+                    </span>
+
+                </button>
+
+
+                <!-- Scholarship Finder -->
+
+                <button type="button" class="onestop-service-card" data-service="scholarship">
+
+                    <span class="onestop-service-icon">◇</span>
+
+                    <span class="onestop-service-text">
+
+                        <strong>
+                            Scholarship Finder
+                        </strong>
+
+                        <small>
+                            Discover matching scholarships
+                        </small>
+
+                    </span>
+
+                </button>
+
+
+                <!-- Placement Roadmap -->
+
+                <button type="button" class="onestop-service-card" data-service="placement">
+
+                    <span class="onestop-service-icon">▣</span>
+
+                    <span class="onestop-service-text">
+
+                        <strong>
+                            Placement Roadmap
+                        </strong>
+
+                        <small>
+                            Build your preparation plan
+                        </small>
+
+                    </span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAIN AREA ================= -->
+
+
+
+    <main class="main-content">
+
+        <!-- Top navigation -->
+        <header class="topbar">
+
+            <div class="mobile-logo">
+                <span class="logo-mark">O</span>
+                <span>OneStop</span>
+            </div>
+
+            <div class="topbar-right">
+
+
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= PLACEMENT PAGE ================= -->
+
+        <section class="placement-page" id="placementPage">
+
+            <!-- Heading -->
+
+            <div class="page-heading">
+
+                <span class="page-eyebrow">
+                    Build your preparation plan
+                </span>
+
+                <h1>
+                    PLACEMENT PREPARATION
+                </h1>
+
+                <p>
+                    Tell us about your target role and company.
+                    OneStop will generate a personalized preparation roadmap.
+                </p>
+
+            </div>
+
+
+            <!-- ================= INPUT CARD ================= -->
+
+            <section class="placement-input-card">
+
+                <div class="input-card-heading">
+
+                    <div>
+                        <h2>Placement Preparation</h2>
+
+                        <p>
+                            Enter your details to generate your preparation plan.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <form id="placementForm">
+
+                    <div class="form-grid">
+
+                        <!-- Company -->
+
+                        <div class="form-group">
+
+                            <label for="company">
+                                Target Company
+                            </label>
+
+                            <input type="text" id="targetCompany" name="targetCompany" placeholder="e.g. Amazon"
+                                required>
+
+                        </div>
+
+
+                        <!-- Role -->
+
+                        <div class="form-group">
+
+                            <label for="role">
+                                Target Role
+                            </label>
+
+                            <input type="text" id="targetRole" name="targetRole" placeholder="e.g. SDE" required>
+
+                        </div>
+
+
+                        <!-- Preparation Days -->
+
+                        <div class="form-group">
+
+                            <label for="days">
+                                Preparation Days
+                            </label>
+
+                            <input type="number" id="timeLeftDays" name="timeLeftDays" placeholder="e.g. 15" min="1"
+                                required>
+
+                        </div>
+
+
+
+
+                        <!-- Generate -->
+
+                        <div class="generate-area">
+
+                            <button type="submit" class="generate-btn" id="generateBtn">
+
+                                <span class="generate-icon">✦</span>
+
+                                <span>
+                                    Generate Preparation Plan
+                                </span>
+
+                            </button>
+
+                        </div>
+
+                </form>
+
+            </section>
+
+
+            <!-- ================= LOADING ================= -->
+
+            <section class="loading-section hidden" id="loadingSection">
+
+                <div class="loading-spinner"></div>
+
+                <p>
+                    Creating your personalized placement plan...
+                </p>
+
+            </section>
+
+
+            <!-- ================= RESULT ================= -->
+
+            <section class="result-section hidden" id="resultSection">
+
+                <!-- Result heading -->
+
+                <div class="result-heading">
+
+                    <div>
+
+                        <span class="page-eyebrow">
+                            YOUR PLAN
+                        </span>
+
+                        <h2 id="resultTitle">
+                            Placement Preparation Plan
+                        </h2>
+
+                        <p id="resultSubtitle">
+                            Personalized preparation roadmap
+                        </p>
+
+                    </div>
+
+                    <button class="new-plan-btn" id="newPlanBtn">
+                        + New Plan
+                    </button>
+
+                </div>
+
+
+                <!-- ================= SKILLS REQUIRED ================= -->
+
+                <section class="result-card skills-card">
+
+                    <div class="card-title">
+
+                        <div>
+                            <span class="section-number">01</span>
+                            <h3>Skills Required</h3>
+                        </div>
+
+                    </div>
+
+                    <div class="skills-container" id="skillsRequired">
+                        <!-- JavaScript will render skillsRequired -->
+                    </div>
+
+                </section>
+
+
+                <!-- ================= TWO COLUMN ================= -->
+
+                <div class="result-grid">
+
+
+                    <!-- HIRING PROCESS -->
+
+                    <section class="result-card">
+
+                        <div class="card-title">
+
+                            <div>
+                                <span class="section-number">02</span>
+                                <h3>Hiring Process</h3>
+                            </div>
+
+                        </div>
+
+                        <div class="hiring-process" id="hiringProcess">
+                            <!-- JavaScript will render hiringProcess -->
+                        </div>
+
+                    </section>
+
+
+                    <!-- PREPARATION PRIORITY -->
+
+                    <section class="result-card">
+
+                        <div class="card-title">
+
+                            <div>
+                                <span class="section-number">03</span>
+                                <h3>Preparation Priority</h3>
+                            </div>
+
+                        </div>
+
+                        <div class="priority-list" id="preparationPriority">
+                            <!-- JavaScript will render preparationPriority -->
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <!-- ================= PREVIOUSLY ASKED QUESTIONS ================= -->
+
+                <section class="result-card">
+
+                    <div class="card-title">
+
+                        <div>
+                            <span class="section-number">04</span>
+                            <h3>Previously Asked Questions</h3>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="questions-list" id="previouslyAskedQuestions">
+                        <!-- JavaScript will render previouslyAskedQuestions -->
+                    </div>
+
+                </section>
+
+
+                <!-- ================= PREPARATION ROADMAP ================= -->
+
+                <section class="result-card">
+
+                    <div class="card-title">
+
+                        <div>
+                            <span class="section-number">05</span>
+                            <h3>Preparation Roadmap</h3>
+                        </div>
+
+                    </div>
+
+                    <div class="roadmap-list" id="preparationRoadmap">
+                        <!-- JavaScript will render preparationRoadmap -->
+                    </div>
+
+                </section>
+
+            </section>
+
+        </section>
+
+
+
+
+
+
+
+
+        <!-- ================= SCHOLARSHIP PAGE ================= -->
+
+        <section class="scholarship-page hidden" id="scholarshipPage">
+
+            <!-- Heading -->
+
+            <div class="page-heading">
+
+                <span class="page-eyebrow">
+                    Find scholarships you're eligible for
+                </span>
+
+                <h1>
+                    SCHOLARSHIP FINDER
+                </h1>
+
+                <p>
+                    Tell us about yourself and OneStop will find
+                    scholarship opportunities matching your profile.
+                </p>
+
+            </div>
+
+
+            <!-- ================= INPUT CARD ================= -->
+
+            <section class="scholarship-input-card">
+
+                <div class="input-card-heading">
+
+                    <div>
+
+                        <h2>
+                            Scholarship Finder
+                        </h2>
+
+                        <p>
+                            Enter your details to find matching scholarships.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <form id="scholarshipForm">
+
+                    <div class="form-grid">
+
+                        <!-- State -->
+
+                        <div class="form-group">
+
+                            <label for="scholarshipState">
+                                Domicile <span class="required">*</span>
+                            </label>
+
+                            <select id="scholarshipState" name="" required>
+
+                                <option value="">Select </option>
+
+
+
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="West Bengal">West Bengal</option>
+
+
+
+
+
+
+                                <option value="Andaman and Nicobar Islands">
+                                    Andaman and Nicobar Islands
+                                </option>
+
+                                <option value="Chandigarh">
+                                    Chandigarh
+                                </option>
+
+                                <option value="Dadra and Nagar Haveli and Daman and Diu">
+                                    Dadra and Nagar Haveli and Daman and Diu
+                                </option>
+
+                                <option value="Delhi">
+                                    Delhi
+                                </option>
+
+                                <option value="Jammu and Kashmir">
+                                    Jammu and Kashmir
+                                </option>
+
+                                <option value="Ladakh">
+                                    Ladakh
+                                </option>
+
+                                <option value="Lakshadweep">
+                                    Lakshadweep
+                                </option>
+
+                                <option value="Puducherry">
+                                    Puducherry
+                                </option>
+
+                                </optgroup>
+
+                            </select>
+                        </div>
+
+
+                        <!-- Category -->
+
+                        <div class="form-group">
+
+                            <label for="scholarshipCategory">
+                                Category <span class="required">*</span>
+                            </label>
+
+                            <select id="scholarshipCategory" name="category" required>
+                                <option value="">Select category</option>
+                                <option value="General">General</option>
+                                <option value="OBC">OBC</option>
+                                <option value="SC">SC</option>
+                                <option value="ST">ST</option>
+                                <option value="EWS">EWS</option>
+                            </select>
+
+                        </div>
+
+
+                        <!-- Annual Family Income -->
+
+                        <div class="form-group">
+
+                            <label for="annualFamilyIncome">
+                                Annual Family Income <span class="required">*</span>
+                            </label>
+
+                            <input type="number" id="annualFamilyIncome" name="annualFamilyIncome"
+                                placeholder="e.g. 250000" min="0" step="1" required>
+
+                        </div>
+
+
+                        <!-- Course -->
+
+                        <div class="form-group">
+
+                            <label for="scholarshipCourse">
+                                Course/Stream <span class="required">*</span>
+                            </label>
+
+                            <input type="text" id="scholarshipCourse" name="course" placeholder="e.g. B.Tech Or Science/Commerce/Arts" required>
+
+                        </div>
+
+
+
+                        <!-- Education Stage -->
+
+
+
+                        <!-- ================= EDUCATION STAGE ================= -->
+
+                        <div class="form-group">
+
+                            <label for="educationStage">
+                                Current Education Stage
+                                <span class="required">*</span>
+                            </label>
+
+                            <select id="educationStage" name="educationStage" required>
+
+                                <option value="">
+                                    Select education stage
+                                </option>
+
+                                <option value="11th">
+                                    Class 11
+                                </option>
+
+                                <option value="12th">
+                                    Class 12
+                                </option>
+
+                                <option value="Diploma">
+                                    Diploma
+                                </option>
+
+                                <option value="Undergraduate">
+                                    Undergraduate
+                                </option>
+
+                                <option value="Postgraduate">
+                                    Postgraduate
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- ================= CURRENT YEAR ================= -->
+
+                        <div class="form-group">
+
+                            <label for="currentYear">
+                                Current Year / Semester
+                                <span class="required">*</span>
+                            </label>
+
+                            <select id="currentYear" name="currentYear" required disabled>
+
+                                <option value="">
+                                    Select education stage first
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- ================= LAST QUALIFYING EXAM ================= -->
+
+                        <div class="form-group">
+
+                            <label for="lastQualifyingExam">
+                                Last Qualifying Exam
+                                <span class="required">*</span>
+                            </label>
+
+                            <input type="text" id="lastQualifyingExam" name="lastQualifyingExam"
+                                placeholder="Automatically determined" readonly required>
+
+                        </div>
+
+
+                        <!-- ================= LAST QUALIFYING EXAM PERCENTAGE ================= -->
+
+                        <div class="form-group">
+
+                            <label for="lastQualifyingExamPercentage">
+                                Last Qualifying Exam Percentage
+                                <span class="required">*</span>
+                            </label>
+
+                            <input type="number" id="lastQualifyingExamPercentage" name="lastQualifyingExamPercentage"
+                                placeholder="e.g. 82" min="0" max="100" step="0.01" required>
+
+                        </div>
+
+
+
+
+
+                        <!-- Gender -->
+
+                        <div class="form-group">
+
+                            <label for="scholarshipGender">
+                                Gender <span class="required">*</span>
+                            </label>
+
+                            <select id="scholarshipGender" name="gender" required>
+                                <option value="">Select gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+
+                        </div>
+
+
+                        <!-- PwD -->
+
+                        <div class="form-group">
+
+                            <label for="scholarshipPwd">
+                                PwD Status <span class="required">*</span>
+                            </label>
+
+                            <select id="scholarshipPwd" name="pwd" required>
+                                <option value="">Select status</option>
+                                <option value="false">No</option>
+                                <option value="true">Yes</option>
+                            </select>
+
+                        </div>
+
+
+                        <!-- Parent Occupation -->
+
+                        <div class="form-group">
+
+                            <label for="parentOccupation">
+                                Parent Occupation <span class="required">*</span>
+                            </label>
+
+                            <input type="text" id="parentOccupation" name="parentOccupation"
+                                placeholder="e.g. Private Employee" required>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Error -->
+
+                    <div class="scholarship-form-error hidden" id="scholarshipFormError"></div>
+
+
+                    <!-- Generate -->
+
+                    <div class="generate-area">
+
+                        <button type="submit" class="generate-btn" id="scholarshipFindBtn">
+
+                            <span class="generate-icon">✦</span>
+
+                            <span>
+                                Find Scholarships
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+
+            <!-- ================= LOADING ================= -->
+
+            <section class="loading-section hidden" id="scholarshipLoadingSection">
+
+                <div class="loading-spinner"></div>
+
+                <p>
+                    Finding scholarships matching your profile...
+                </p>
+
+            </section>
+
+
+            <!-- ================= ERROR ================= -->
+
+            <section class="scholarship-message-card hidden" id="scholarshipErrorSection">
+
+                <h3>
+                    Unable to find scholarships
+                </h3>
+
+                <p id="scholarshipErrorMessage">
+                    Something went wrong. Please try again.
+                </p>
+
+            </section>
+
+
+            <!-- ================= RESULTS ================= -->
+
+            <section class="scholarship-results hidden" id="scholarshipResults">
+
+                <div class="result-heading">
+
+                    <div>
+
+                        <span class="page-eyebrow">
+                            YOUR MATCHES
+                        </span>
+
+                        <h2>
+                            Top Scholarships for You
+                        </h2>
+
+                        <p>
+                            Scholarships ranked according to your profile.
+                        </p>
+
+                    </div>
+
+
+
+                </div>
+
+
+                <!-- Table -->
+
+                <section class="scholarship-table-card">
+
+                    <div class="scholarship-table-wrapper">
+
+                        <table class="scholarship-table">
+
+                            <thead>
+
+                                <tr>
+                                    <th>Scholarship</th>
+                                    <th>Provider</th>
+                                    <th>Eligibility</th>
+                                    <th>Amount</th>
+                                    <th>Deadline</th>
+                                    <th>Match Score</th>
+                                    <th>Status</th>
+                                    <th>Apply</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="scholarshipTableBody">
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+
+            <!-- ================= EMPTY ================= -->
+
+            <section class="scholarship-message-card hidden" id="scholarshipEmptySection">
+
+                <h3>
+                    No matching scholarships found
+                </h3>
+
+                <p>
+                    No matching scholarships found based on the information provided.
+                </p>
+
+                <button class="new-plan-btn" id="modifyScholarshipEmptyBtn" type="button">
+                    Modify Profile & Search Again
+                </button>
+
+            </section>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ================= COLLEGE PREDICTION PAGE ================= -->
+
+        <section class="college-prediction-page hidden" id="collegePredictionPage">
+
+            <!-- ================= HEADING ================= -->
+
+            <div class="page-heading">
+
+                <span class="page-eyebrow">
+                    Find colleges that fit you
+                </span>
+
+                <h1>
+                    COLLEGE PREDICTION
+                </h1>
+
+                <p>
+                    Tell us about your academic profile, entrance exam
+                    and preferences. OneStop will suggest suitable colleges.
+                </p>
+
+            </div>
+
+
+            <!-- ================= INPUT CARD ================= -->
+
+            <section class="college-prediction-input-card">
+
+                <div class="input-card-heading">
+
+                    <div>
+
+                        <h2>
+                            College Prediction
+                        </h2>
+
+                        <p>
+                            Fill or choose the information you have.
+                            Optional fields can be left blank.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <form id="collegePredictionForm">
+
+                    <div class="form-grid">
+
+                        <!-- 10th Percentage -->
+
+                        <div class="form-group">
+
+                            <label for="collegeTenthPercentage">
+                                10th Percentage*
+                                <span class="college-required"></span>
+                            </label>
+
+                            <input type="number" id="collegeTenthPercentage" name="tenthPercentage" min="0" max="100"
+                                step="0.01" placeholder="e.g. 88.5" required>
+
+                        </div>
+
+
+                        <!-- 12th Percentage -->
+
+                        <div class="form-group">
+
+                            <label for="collegeTwelfthPercentage">
+                                12th Percentage
+                                <span class="college-optional">Optional</span>
+                            </label>
+
+                            <input type="number" id="collegeTwelfthPercentage" name="twelfthPercentage" min="0"
+                                max="100" step="0.01" placeholder="e.g. 82.0">
+
+                        </div>
+
+
+                        <!-- Diploma Percentage -->
+
+                        <div class="form-group">
+
+                            <label for="collegeDiplomaPercentage">
+                                Diploma Percentage
+                                <span class="college-optional">Optional</span>
+                            </label>
+
+                            <input type="number" id="collegeDiplomaPercentage" name="diplomaPercentage" min="0"
+                                max="100" step="0.01" placeholder="e.g. 78.5">
+
+                        </div>
+
+
+                        <!-- Exam Type -->
+
+                        <div class="form-group">
+
+                            <label for="collegeExamType">
+                                Exam Type*
+                                <span class="college-required"></span>
+                            </label>
+
+                            <select id="collegeExamType" name="examType" required>
+
+                                <option value="">
+                                    Select Exam Type
+                                </option>
+
+                                <option value="JEE Main">
+                                    JEE Main
+                                </option>
+
+                                <option value="JEE Advanced">
+                                    JEE Advanced
+                                </option>
+
+                                <option value="NEET">
+                                    NEET
+                                </option>
+
+                                <option value="CUET">
+                                    CUET
+                                </option>
+
+                                <option value="BITSAT">
+                                    BITSAT
+                                </option>
+
+                                <option value="WBJEE">
+                                    WBJEE
+                                </option>
+
+                                <option value="MHT CET">
+                                    MHT CET
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Exam Rank / Percentile -->
+
+                        <div class="form-group">
+
+                            <label for="collegeExamRankPercentile">
+                                Exam Rank/Percentile*
+                                <span class="college-required"></span>
+                            </label>
+
+                            <div class="college-rank-input-wrapper">
+
+                                <input type="text" id="collegeExamRankPercentile" name="examRankPercentile"
+                                    placeholder="e.g. 12500 or 95.4" required>
+
+                                <select id="collegeRankType" name="rankType" required>
+
+                                    <option value="Rank">
+                                        Rank
+                                    </option>
+
+                                    <option value="Percentile">
+                                        Percentile
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Gender -->
+
+                        <div class="form-group">
+
+                            <label for="collegeGender">
+                                Gender*
+                                <span class="college-required"></span>
+                            </label>
+
+                            <select id="collegeGender" name="gender" required>
+
+                                <option value="">
+                                    Select Gender
+                                </option>
+
+                                <option value="Male">
+                                    Male
+                                </option>
+
+                                <option value="Female">
+                                    Female
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Category -->
+
+                        <div class="form-group">
+
+                            <label for="collegeCategory">
+                                Category*
+                                <span class="college-required"></span>
+                            </label>
+
+                            <select id="collegeCategory" name="category" required>
+
+                                <option value="">
+                                    Select Category
+                                </option>
+
+                                <option value="General">
+                                    General
+                                </option>
+
+                                <option value="EWS">
+                                    EWS
+                                </option>
+
+                                <option value="OBC">
+                                    OBC
+                                </option>
+
+                                <option value="SC">
+                                    SC
+                                </option>
+
+                                <option value="ST">
+                                    ST
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- PwD Status -->
+
+                        <div class="form-group">
+
+                            <label for="collegePwd">
+                                PwD Status*
+                                <span class="college-required"></span>
+                            </label>
+
+                            <select id="collegePwd" name="pwd" required>
+
+                                <option value="">
+                                    Select PwD Status
+                                </option>
+
+                                <option value="Applicable">
+                                    Applicable
+                                </option>
+
+                                <option value="Not Applicable">
+                                    Not Applicable
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Preferred Course -->
+
+                        <div class="form-group">
+
+                            <label for="collegePreferredCourse">
+                                Preferred Course*
+                                <span class="college-required"></span>
+                            </label>
+
+                            <input type="text" id="collegePreferredCourse" name="preferredCourse"
+                                placeholder="e.g. Computer Science and Engineering" required>
+
+                        </div>
+
+
+                        <!-- Home State -->
+
+                        <div class="form-group">
+
+                            <label for="collegeQuota">
+                                Quota
+                                <span class="college-optional">Optional</span>
+                            </label>
+
+                            <select id="collegeQuota" name="quota">
+
+                                <option value="">
+                                    Select Quota
+                                </option>
+
+                                <option value="Home State">
+                                    Home State
+                                </option>
+
+                                <option value="Other State">
+                                    Other State
+                                </option>
+
+                            </select>
+
+                        </div>
+                        <!-- College Type -->
+
+                        <div class="form-group">
+
+                            <label for="collegeType">
+                                College Type
+                                <span class="college-optional">Optional</span>
+                            </label>
+
+                            <select id="collegeType" name="collegeType">
+
+                                <option value="">
+                                    Select College Type
+                                </option>
+
+                                <option value="Government">
+                                    Government
+                                </option>
+
+                                <option value="Private">
+                                    Private
+                                </option>
+
+                                <option value="All">
+                                    All
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Target College -->
+
+                        <div class="form-group">
+
+                            <label for="collegeTargetCollege">
+                                Target College
+                                <span class="college-optional">Optional</span>
+                            </label>
+
+                            <input type="text" id="collegeTargetCollege" name="targetCollege"
+                                placeholder="e.g. NIT Allahabad">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FORM ERROR -->
+
+                    <div class="college-prediction-form-error hidden" id="collegePredictionFormError"></div>
+
+
+                    <!-- ACTION -->
+
+                    <div class="college-prediction-action">
+
+                        <button type="submit" class="generate-btn" id="collegePredictionBtn">
+                            Predict Colleges
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+
+            <!-- ================= LOADING ================= -->
+
+            <section class="college-prediction-loading hidden" id="collegePredictionLoading">
+
+                <div class="college-prediction-loading-card">
+
+                    <div class="loading-spinner"></div>
+
+                    <h3>
+                        Analyzing your profile...
+                    </h3>
+
+                    <p>
+                        Finding suitable college recommendations.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= RESULTS ================= -->
+
+            <section class="college-prediction-results hidden" id="collegePredictionResults">
+
+                <div class="result-heading">
+
+                    <div>
+
+                        <span class="page-eyebrow">
+                            COLLEGE RECOMMENDATIONS
+                        </span>
+
+                        <h2>
+                            Recommended Colleges
+                        </h2>
+
+                        <p>
+                            Colleges based on the information you provided.
+                        </p>
+
+                    </div>
+
+                    <button type="button" class="new-plan-btn" id="collegePredictionNewBtn">
+                        New Prediction
+                    </button>
+
+                </div>
+
+
+                <!-- ================= KNOW MORE TABLE ================= -->
+
+                <section class="college-prediction-table-card">
+
+                    <div class="college-prediction-table-heading">
+
+                         
+
+                    </div>
+
+                    <div class="college-prediction-table-wrapper">
+
+                        <table class="college-prediction-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        College
+                                    </th>
+
+                                    <th>
+                                        Opening–Closing Rank
+                                    </th>
+
+                                    <th>
+                                        Branch
+                                    </th>
+
+                                    <th>
+                                        Fees
+                                    </th>
+
+                                    <th>
+                                        Avg. Package
+                                    </th>
+
+                                    <th>
+                                        Counselling
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="collegePredictionTableBody">
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ================= EMPTY ================= -->
+
+                <section class="college-prediction-message-card hidden" id="collegePredictionEmpty">
+
+                    <h3>
+                        No college recommendations found
+                    </h3>
+
+                    <p>
+                        No suitable colleges were returned for the
+                        information provided.
+                    </p>
+
+                </section>
+
+
+                <!-- ================= ERROR ================= -->
+
+                <section class="college-prediction-message-card hidden" id="collegePredictionError">
+
+                    <h3>
+                        Unable to predict colleges
+                    </h3>
+
+                    <p id="collegePredictionErrorMessage">
+                        Please try again.
+                    </p>
+
+                </section>
+
+            </section>
+
+        </section>
+
+
+
+        <!-- ================= HISTORY PAGE ================= -->
+
+        <section class="history-page hidden" id="historyPage">
+
+            <div class="page-heading">
+
+                <span class="page-eyebrow">
+                    YOUR ACTIVITY
+                </span>
+
+                <h1>
+                    HISTORY
+                </h1>
+
+                <p>
+                    View your previous Placement, Scholarship and College
+                    Prediction results.
+                </p>
+
+            </div>
+
+
+            <!-- ================= LOADING ================= -->
+
+            <section class="history-loading hidden" id="historyLoading">
+
+                <div class="loading-spinner"></div>
+
+                <p>
+                    Loading your history...
+                </p>
+
+            </section>
+
+
+            <!-- ================= ERROR ================= -->
+
+            <section class="history-message-card hidden" id="historyError">
+
+                <h3>
+                    Unable to load history
+                </h3>
+
+                <p id="historyErrorMessage">
+                    Something went wrong. Please try again.
+                </p>
+
+                <button type="button" class="new-plan-btn" id="historyRetryBtn">
+                    Try Again
+                </button>
+
+            </section>
+
+
+            <!-- ================= EMPTY ================= -->
+
+            <section class="history-message-card hidden" id="historyEmpty">
+
+                <h3>
+                    No history yet
+                </h3>
+
+                <p>
+                    Your generated Placement plans, Scholarship searches
+                    and College predictions will appear here.
+                </p>
+
+            </section>
+
+
+            <!-- ================= HISTORY LIST ================= -->
+
+            <section class="history-list" id="historyList">
+
+            </section>
+
+        </section>
+
+
+
+    </main>
+
+
+    <!-- ================= MOBILE MENU ================= -->
+
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+        ☰
+    </button>
+
+
+    <!-- ============================================================
+     AUTH MODAL
+     ============================================================ -->
+
+    <div class="auth-overlay hidden" id="authOverlay">
+
+        <div class="auth-modal" id="authModal">
+
+            <button type="button" class="auth-close" id="authClose" aria-label="Close">
+                ×
+            </button>
+
+
+            <!-- ================= LOGIN ================= -->
+
+            <div id="loginView">
+
+                <div class="auth-header">
+
+                    <div class="auth-logo-mark">
+                        O
+                    </div>
+
+                    <h2>Welcome back</h2>
+
+                    <p>
+                        Sign in to continue to OneStop
+                    </p>
+
+                </div>
+
+
+                <form id="loginForm">
+
+                    <div class="auth-form-group">
+
+                        <label for="loginEmail">
+                            Email
+                        </label>
+
+                        <input type="email" id="loginEmail" placeholder="Enter your email" autocomplete="email"
+                            required>
+
+                    </div>
+
+
+                    <div class="auth-form-group">
+
+                        <label for="loginPassword">
+                            Password
+                        </label>
+
+                        <input type="password" id="loginPassword" placeholder="Enter your password"
+                            autocomplete="current-password" required>
+
+                    </div>
+
+
+                    <div class="auth-error hidden" id="loginError"></div>
+
+
+                    <button type="submit" class="auth-primary-btn" id="loginBtn">
+                        Sign in
+                    </button>
+
+                </form>
+
+
+                <div class="auth-divider">
+
+                    <span></span>
+
+                    <p>or</p>
+
+                    <span></span>
+
+                </div>
+
+
+                <button type="button" class="google-auth-btn" id="googleLoginBtn">
+
+                    <span class="google-icon">G</span>
+
+                    <span>Continue with Google</span>
+
+                </button>
+
+
+                <p class="auth-switch">
+
+                    Don't have an account?
+
+                    <button type="button" id="showSignupBtn">
+                        Sign up
+                    </button>
+
+                </p>
+
+            </div>
+
+
+            <!-- ================= SIGNUP ================= -->
+
+            <div id="signupView" class="hidden">
+
+                <div class="auth-header">
+
+                    <div class="auth-logo-mark">
+                        O
+                    </div>
+
+                    <h2>Create account</h2>
+
+                    <p>
+                        Create your OneStop account
+                    </p>
+
+                </div>
+
+
+                <form id="signupForm">
+
+                    <div class="auth-form-group">
+
+                        <label for="signupName">
+                            Name
+                        </label>
+
+                        <input type="text" id="signupName" placeholder="Enter your name" autocomplete="name" required>
+
+                    </div>
+
+
+                    <div class="auth-form-group">
+
+                        <label for="signupEmail">
+                            Email
+                        </label>
+
+                        <input type="email" id="signupEmail" placeholder="Enter your email" autocomplete="email"
+                            required>
+
+                    </div>
+
+
+                    <div class="auth-form-group">
+
+                        <label for="signupPassword">
+                            Password
+                        </label>
+
+                        <input type="password" id="signupPassword" placeholder="Create a password"
+                            autocomplete="new-password" minlength="8" required>
+
+                    </div>
+
+
+                    <div class="auth-error hidden" id="signupError"></div>
+
+
+                    <button type="submit" class="auth-primary-btn" id="signupBtn">
+                        Sign up
+                    </button>
+
+                </form>
+
+
+                <div class="auth-divider">
+
+                    <span></span>
+
+                    <p>or</p>
+
+                    <span></span>
+
+                </div>
+
+
+                <button type="button" class="google-auth-btn" id="googleSignupBtn">
+
+                    <span class="google-icon">G</span>
+
+                    <span>Continue with Google</span>
+
+                </button>
+
+
+                <p class="auth-switch">
+
+                    Already have an account?
+
+                    <button type="button" id="showLoginBtn">
+                        Sign in
+                    </button>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ============================================================
+     ACCOUNT MENU
+     ============================================================ -->
+
+    <div class="account-popover hidden" id="accountPopover">
+
+        <div class="account-popover-header">
+
+            <div class="account-popover-avatar" id="accountPopoverAvatar">
+                U
+            </div>
+
+            <div>
+
+                <strong id="accountPopoverName">
+                    Guest User
+                </strong>
+
+                <span id="accountPopoverEmail">
+                    Continue as guest
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="account-popover-divider"></div>
+
+
+        <button type="button" class="account-menu-item" id="accountLoginBtn">
+            Sign in
+        </button>
+
+
+        <button type="button" class="account-menu-item hidden" id="accountLogoutBtn">
+            Sign out
+        </button>
+
+    </div>
+
+
+    <!-- ================= HISTORY VIEW MODAL ================= -->
+
+    <div class="history-modal-overlay hidden" id="historyModalOverlay">
+
+        <div class="history-modal">
+
+            <button type="button" class="history-modal-close" id="historyModalClose">
+                ×
+            </button>
+
+
+            <div class="history-modal-header">
+
+                <span class="page-eyebrow" id="historyModalModule">
+                    HISTORY
+                </span>
+
+                <h2 id="historyModalTitle">
+                    History Result
+                </h2>
+
+                <p id="historyModalDate">
+                </p>
+
+            </div>
+
+
+            <div class="history-result-section">
+
+                <div class="history-result-label">
+                    INPUT
+                </div>
+
+                <pre class="history-json" id="historyRequestData"></pre>
+
+            </div>
+
+
+            <div class="history-result-section">
+
+                <div class="history-result-label">
+                    RESULT
+                </div>
+
+                <pre class="history-json" id="historyResponseData"></pre>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/auth.js"></script>
+    <script src="js/app.js"></script>
+
+
+</body>
+
+</html>
